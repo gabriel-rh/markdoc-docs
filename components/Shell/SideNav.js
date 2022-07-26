@@ -4,44 +4,15 @@ import Link from 'next/link';
 
 const items = [
   {
-    title: 'Get started',
+    title: 'Devfile',
     links: [
-      { href: '/docs/overview', children: 'What is Markdoc?' },
-      { href: '/docs/getting-started', children: 'Installation' },
-      { href: '/docs/faq', children: 'FAQ' },
-      { href: '/sandbox', children: 'Try it out' }
-    ]
-  },
-  {
-    title: 'Core concepts',
-    links: [
-      { href: '/docs/syntax', children: 'Syntax and schema' },
-      { href: '/docs/nodes', children: 'Nodes' },
-      { href: '/docs/tags', children: 'Tags' },
-      { href: '/docs/attributes', children: 'Attributes' },
-      { href: '/docs/variables', children: 'Variables' },
-      { href: '/docs/functions', children: 'Functions' },
-      {
-        href: '/docs/render',
-        children: 'Rendering'
-      },
-      { href: '/docs/validation', children: 'Validation' }
-    ]
-  },
-  {
-    title: 'Integration guides',
-    links: [
-      { href: '/docs/examples', children: 'Common examples' },
-      { href: '/docs/examples/html', children: 'Using with HTML' },
-      { href: '/docs/nextjs', children: 'Using with Next.js' },
-      { href: '/docs/examples/react', children: 'Using with React' }
-    ]
-  },
-  {
-    title: 'Advanced concepts',
-    links: [
-      { href: '/docs/frontmatter', children: 'Frontmatter' },
-      { href: '/docs/partials', children: 'Partials' }
+      { href: '/docs/con_devfile', children: 'Overview' },
+      { href: '/docs/proc_developing-with-devfiles', children: 'Developing with devfiles' },
+      { href: '/docs/proc_adding-schema-version-to-a-devfile', children: 'Adding schema version to a devfile' },
+      { href: '/docs/building-a-custom-devfile-registry', children: 'Building a custom devfile registry' }
+
+      
+      
     ]
   }
 ];

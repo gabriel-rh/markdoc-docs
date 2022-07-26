@@ -63,7 +63,10 @@ export function useMarkdocCode(code) {
         },
         invalid_code: `\n{% callout %}\nHere!\n`
       },
-      components
+      components,
+      partials: {
+        'header.md': Markdoc.parse(`# My header`)
+      }
     };
   }, [ast]);
 
