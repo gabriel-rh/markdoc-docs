@@ -1,6 +1,14 @@
 # test markdoc features
 
 
+## code block
+
+{% code %}
+
+some code herr
+
+{% /code %}
+
 ## Side by side test
 {% sidebyside %}
 
@@ -64,3 +72,10 @@ puts "Some code here."
 * Row 3 cell 2
 * Row 3 cell 3
 {% /table %}
+
+
+## Paritals test
+
+{% partial file="header.md" /%}
+
+{% partial file="proc_creating-a-git-repository.md" /%}
