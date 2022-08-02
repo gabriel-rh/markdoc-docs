@@ -10,7 +10,8 @@ const items = [
       { href: '/docs/proc_developing-with-devfiles', children: 'Developing with devfiles' },
       { href: '/docs/proc_adding-schema-version-to-a-devfile', children: 'Adding schema version to a devfile' },
       { href: '/docs/building-a-custom-devfile-registry', children: 'Building a custom devfile registry' },
-      { href: '/docs/markdoc-test', children: 'Test markdoc features' }      
+      { href: '/docs/markdoc-test', children: 'Test markdoc features' },
+      { href: '/docs/code', children: 'Code blocks' }        
     ]
   }
 ];

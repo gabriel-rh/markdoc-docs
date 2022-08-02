@@ -5,9 +5,12 @@ import Markdoc from '@markdoc/markdoc';
 import { getSchema } from '@markdoc/next.js/runtime';
 import { ObjectDisplay } from './ObjectDisplay';
 
+
 import * as tags from '../markdoc/tags';
 import * as nodes from '../markdoc/nodes';
 import * as functions from '../markdoc/functions';
+
+import myvariables from "../public/variables"
 
 const schema = {
   tags,
@@ -46,18 +49,24 @@ export function useMarkdocCode(code) {
     // require here to prevent Webpack Promise issue
     const yaml = require('js-yaml');
 
+
     let frontmatter = BASE_FRONTMATTER;
+    let variables;
+
     try {
       if (ast.attributes.frontmatter) {
         frontmatter = yaml.load(ast.attributes.frontmatter);
       }
+
     } catch (error) {
       // pass
     }
 
+    console.log("myvariables:" +  myvariables['product-title'])
     return {
       ...rest,
       variables: {
+        myvariables,
         markdoc: {
           frontmatter: frontmatter || BASE_FRONTMATTER
         },
